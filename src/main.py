@@ -22,9 +22,7 @@ logging.basicConfig(
 
 async def handle_connection(reader, writer):
     addr = writer.get_extra_info("peername")
-    #my_port = reader
     my_ip, my_port = writer.get_extra_info("sockname")
-    #my_port = reader.exception
     print(f"Connected by {addr} to port: {my_port}")
     logging.info(f"Connected by {addr} to port: {my_port}")
     while True:
