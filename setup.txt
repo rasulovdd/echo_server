@@ -1,0 +1,5 @@
+cd C:\tools\
+git clone https://github.com/rasulovdd/echo_server.git
+cd C:\tools\echo_server
+python -m venv env
+call "C:\tools\echo_server\env\Scripts\activate.bat"
